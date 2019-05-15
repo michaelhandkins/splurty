@@ -1,5 +1,6 @@
 @import "bootstrap";
 
+
 .clear {
   clear: both;
 }
@@ -38,6 +39,7 @@
   color: black;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf
+  font-family: 'jinkyregular';
 }
 
 header {
@@ -46,4 +48,12 @@ header {
 
 hr {
   clear: both
+}
+
+h1 {
+  font-family: 'jinkyregular';
+}
+
+h2 {
+  font-family: 'jinkyregular';
 }
