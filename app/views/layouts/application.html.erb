@@ -23,11 +23,12 @@
         </div>
         <% end %>
       </div>
-      <div class="col-4 slogan">
+      <div class="col col-sm-4 hidden-xs-down slogan">
         Splurting out reasons you might be a Calvinist since 2019
       </div>
-      <div class="col-5 links">
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+        &nbsp &nbsp
         <%= link_to 'About', about_path %>
       </div>
     </header>
@@ -46,8 +47,9 @@
           </div>
          <%= simple_form_for Quote.new do |f| %> 
             <div class="modal-body">
-              <%= f.input :saying %>
-              <%= f.input :author %>
+              <%= f.input :saying, label: "What is the saying you want to add?" %>
+              <br />
+              <%= f.input :author, label: "Who is the author of this quote?" %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -76,10 +78,10 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
           </div>
-          <div class="col-6 footer-blurb">
+          <div class="col-12 col-sm-6 footer-blurb">
             Proudly hacked by <a href="https://michaelsportfolio.netlify.com/">Michael Handkins</a><br />
           </div>
         </div>
