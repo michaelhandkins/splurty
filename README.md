@@ -1,24 +1,26 @@
-# README
+Splurty
+=======
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A database-powered quote generator with a mobile-first design, using the Ruby on Rails framework, HTML, and CSS. Uses Git and GitHub for version control, and launched on Heroku. Specifically, this version of Splurty is for adding reasons that one may be a Calvinist.
 
-Things you may want to cover:
+Technologies Used
+-----------------
 
-* Ruby version
+  * Ruby, v. 2.5.3 (primary programming language)
+  * HTML5/CSS3 (basic structure & design)
+  * Rails (framework)
+  * Postgres (relational database)
+  * Bootstrap (design elements)
 
-* System dependencies
+Interface
+---------
 
-* Configuration
+Any user who visits Splurty may add a reason that one might be a Calvinist to the database.
 
-* Database creation
+![](images/addquote.PNG)
 
-* Database initialization
+The reasons are then randomly displayed one at a time on the home page. A random quote is selected each time the home page is refreshed.
 
-* How to run the test suite
+![](images/random.PNG)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Splurty is deployed at https://splurty-handkins.herokuapp.com/
